@@ -9,6 +9,8 @@ web:
   links:
     - db:db
   volumes:
+    - ./var-lib-odoo:/var/lib/odoo
+    - ./etc-odoo:/etc/odoo
     - ./extra-addons:/mnt/extra-addons
   ports:
     - "18069:8069"
