@@ -8,5 +8,7 @@ web:
   image: odoo:11
   links:
     - db:db
+  volumes:
+    - ./extra-addons:/mnt/extra-addons
   ports:
     - "18069:8069"
